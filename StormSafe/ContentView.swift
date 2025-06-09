@@ -6,19 +6,31 @@
 //
 
 import SwiftUI
-
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    struct ContentView: View {
+        var body: some View {
+            NavigationStack {
+                VStack {
+                    Text("Information about Storm Safe:🌴🌺🥭✨")
+                    NavigationLink(destination:
+                                    Text( " Earthquakes")) {
+                        Text ("Click Me for Information on Earthquakes🌎 ")
+                    }
+                    NavigationLink(destination: Text("Torandoes")) {
+                        Text("Click Me for Information on Torandos")
+                    }
+                }
+                //end VStack
+                .navigationTitle("Home")
+                .navigationBarTitleDisplayMode( .inline)
+                .navigationBarHidden(true)
+            }
+            //end NavStack
         }
-        .padding()
+        //end body
     }
-}
+    //end struct
 
-#Preview {
-    ContentView()
-}
+    #Preview {
+        ContentView()
+    }
+

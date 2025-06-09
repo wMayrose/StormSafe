@@ -14,7 +14,7 @@ struct ContentView: View {
                 Image(systemName: "house")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
-                Text("Home")
+                Text("Home2")
             }
             .padding()
         }

@@ -57,7 +57,7 @@ struct ContentView: View {
             } // end NavStack
         } // end VStack
     func Group() {
-            
+
         } // end Group
     } // end var body
 

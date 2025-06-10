@@ -10,10 +10,28 @@ import SwiftUI
 struct DonationPage: View {
     var body: some View {
         VStack {
-            Text("You have arrived to the donation page!")
-            TextField("Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            TextField("Email", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            TextField("Phone Number", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            ScrollView {
+                Text("You have arrived to the donation page!")
+                    .font(.largeTitle)
+                TextField("Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.center)
+                    .font(.title)
+                    .border(Color.black, width: 1)
+                    .padding()
+                TextField("Email", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.center)
+                    .font(.title)
+                    .border(Color.black, width: 1)
+                    .padding()
+                TextField("Phone Number", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.center)
+                    .font(.title)
+                    .border(Color.black, width: 1)
+                    .padding()
+                Button("Submit") {
+                    
+                } // end button
+            } // end ScrollView
         } // end VStack
     } // end var body
 } // end struct

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+
             NavigationStack {
                 ZStack {
                     Image("storm")
@@ -63,7 +64,7 @@ struct ContentView: View {
             } // end NavStack
         } // end VStack
     func Group() {
-            
+
         } // end Group
     } // end var body
 

@@ -10,33 +10,9 @@
 		BD02BCB42DF745C400115A55 /* StormSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BD02BCCC2DF880E000115A55 /* Exceptions for "StormSafe" folder in "StormSafe" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				DonationInfo,
-			);
-			target = BD02BCB32DF745C400115A55 /* StormSafe */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		BD02BCCD2DF880E000115A55 /* Exceptions for "StormSafe" folder in "Compile Sources" phase from "StormSafe" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = BD02BCB02DF745C400115A55 /* Sources */;
-			membershipExceptions = (
-				DonationInfo,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BD02BCB62DF745C400115A55 /* StormSafe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BD02BCCC2DF880E000115A55 /* Exceptions for "StormSafe" folder in "StormSafe" target */,
-				BD02BCCD2DF880E000115A55 /* Exceptions for "StormSafe" folder in "Compile Sources" phase from "StormSafe" target */,
-			);
 			path = StormSafe;
 			sourceTree = "<group>";
 		};

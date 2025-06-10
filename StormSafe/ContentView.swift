@@ -65,12 +65,6 @@ struct ContentView: View {
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 5.0)
-                                }
-                            NavigationLink(destination: Text("frenchTranslation")) {
-                                Text("Traduction française")
-                                    .font(.title)
-                                    .foregroundColor(Color.white)
-                                    .padding(.bottom, 10.0)
                             }
                         }
                     }

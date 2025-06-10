@@ -12,9 +12,11 @@ struct DonationPage: View {
     @State private var name: String = ""
     @State private var donations: String = ""
     var body: some View {
+        NavigationStack {
         ZStack {
+            Color("Nyanza")
+                .ignoresSafeArea(edges: .all)
             VStack {
-                NavigationStack {
                     ScrollView{
                         Text("You have arrived to the donation page!")
                             .font(.largeTitle)
@@ -25,31 +27,31 @@ struct DonationPage: View {
                         TextField("Full Name", text: $name)
                             .multilineTextAlignment(.center)
                             .font(.title)
-                            .border(Color.black, width: 1)
+                            .border(Color.payneSGray, width: 1)
                             .padding()
                         TextField("Email", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
                             .font(.title)
-                            .border(Color.black, width: 1)
+                            .border(Color.payneSGray, width: 1)
                             .padding()
                         TextField("Phone Number", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
                             .font(.title)
-                            .border(Color.black, width: 1)
+                            .border(Color.payneSGray, width: 1)
                             .padding()
                         TextField("Donation Amount", text: $donations)
                             .multilineTextAlignment(.center)
                             .font(.title)
-                            .border(Color.black, width: 1)
+                            .border(Color.payneSGray, width: 1)
                             .padding()
                         TextField("Why are you donating?", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
                             .font(.title)
-                            .border(Color.black, width: 1)
+                            .border(Color.payneSGray, width: 1)
                             .padding()
-                        Button("Submit") {
-                            print("name")
-                        } // end button
+                        NavigationLink(destination: DonationThankYou()) {
+                            Text("Submit")
+                        }   // end NavLink
                     } //end ScrollView
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
@@ -59,9 +61,9 @@ struct DonationPage: View {
                             .padding()
                     } // end NavLink
                  
-                } // end NavStack
-            } // end VStack
-        } // end ZStack
+                } // end VStack
+            } // end ZStack
+        } // end NavStack
     } // end var body
 } // end struct
 // add text fields and text boxes and other nav links on home page for group members

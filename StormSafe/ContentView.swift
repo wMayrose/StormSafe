@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        VStack {
+            Image(systemName: "house")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Home")
+       
         NavigationStack {
             Text("Content")
             NavigationLink(destination: DonationPage()) {
                 Text("For Donating")
-            } // end NavLinkm,
+            } // end NavLink
             NavigationLink(destination: SupportForm()) {
                 Text("Support Form")
             }
@@ -25,14 +31,9 @@ struct ContentView: View {
                         Text("Click Me for Information on Torandos")
                     }
         } // end NavStack
+    } // end VStack
         Group {
-            VStack {
-                Image(systemName: "house")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Home2")
-            } // end VStack
-            .padding()
+            
         } // end Group
     } // end var body
 } // end struct

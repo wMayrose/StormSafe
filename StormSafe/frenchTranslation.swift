@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct frenchTranslation: View {
     var body: some View {
 
             NavigationStack {
@@ -24,7 +24,7 @@ struct ContentView: View {
                             .padding(.bottom, 330.0)
                             .padding(.leading, 250.0)
                             
-                        Text("StormSafe")
+                        Text("TempêteSafe")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
@@ -35,42 +35,42 @@ struct ContentView: View {
                         Color("Payne's Gray")
                             .ignoresSafeArea(.all)
                         VStack {
-                            Text("Welcome")
+                            Text("Bienvenue")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                                 .padding(.trailing, 220.0)
                                 .padding(.bottom,)
                             NavigationLink(destination: DonationPage()) {
-                                Text("For Donating")
+                                Text("pour faire un don")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 30.0)
                             } // end NavLink,
                             NavigationLink(destination: SupportForm()) {
-                                Text("Support Form")
+                                Text("Formulaire d'assistance")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 30.0)
                             }
                             NavigationLink(destination:
-                                            Text( " Earthquakes")) {
-                                Text ("Earthquakes Info")
+                                Text( "Earthquakes")) {
+                                Text ("Informations sur les tremblements de terre")
                                     .font(.title)
                                     .foregroundColor(Color.white)
-                                    .padding(.bottom, 10.0)
+                                    .padding(.bottom, 30.0)
                             }
                             NavigationLink(destination: Text("Torandoes")) {
-                                Text("Tornado Info")
-                                    .font(.title)
-                                    .foregroundColor(Color.white)
-                                    .padding(.bottom, 5.0)
-                                }
-                            NavigationLink(destination: Text("frenchTranslation")) {
-                                Text("Traduction française")
+                                Text("Informations sur la tornade")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 10.0)
+                                NavigationLink(destination: Text("Torandoes")) {
+                                    Text("Traduction française")
+                                        .font(.title)
+                                        .foregroundColor(Color.white)
+                                        .padding(.bottom, 10.0)
+                                }
                             }
                         }
                     }
@@ -85,3 +85,4 @@ struct ContentView: View {
     #Preview {
         ContentView()
     }
+

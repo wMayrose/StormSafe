@@ -14,6 +14,13 @@ struct ContentView: View {
             NavigationLink(destination: DonationPage()) {
                 Text("For Donating")
             } // end NavLink
+          NavigationLink(destination:
+            Text( " Earthquakes")) {
+            Text ("Click Me for Information on Earthquakes🌎 ")
+                    }
+           NavigationLink(destination: Text("Torandoes")) {
+                        Text("Click Me for Information on Torandos")
+                    }
         } // end NavStack
         Group {
             VStack {

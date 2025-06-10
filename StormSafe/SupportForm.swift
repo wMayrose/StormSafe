@@ -9,11 +9,21 @@ import SwiftUI
 
 struct SupportForm: View {
     var body: some View {
-        Text("Support Form")
-            .font(.title)
-    }
-}
+        ZStack {
+           Color("Light Cambridge Blue")
+                .ignoresSafeArea(edges: .all)
+            VStack {
+                Text("Support Form")
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 700.0)
+            }
+   
+        }
 
+    }
+
+}
 #Preview {
     SupportForm()
 }

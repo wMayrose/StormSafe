@@ -27,23 +27,29 @@ struct SupportForm: View {
                     .font(.title3)
                     .multilineTextAlignment(.center)
                     .lineLimit(nil)
-                    .padding(.bottom, 50.0)
+                    .padding(.bottom, 25.0)
                 
+                Text("Please write your name below")
+                    .multilineTextAlignment(.leading)
                 TextField("Enter name here", text: $text)
-                    .padding(.bottom, 40.0)
+                    .padding(.bottom, 25.0)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 300)
                 
-                TextField("Email email here", text: $text)
-                    .padding(.bottom, 40.0)
+                Text("Please write your email below")
+                TextField("Enter email here", text: $text)
+                    .padding(.bottom, 25.0)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 300)
                 
+                Text("Please write your address below")
                 TextField("Enter address here", text: $text)
-                    .padding(.bottom, 40.0)
+                    .padding(.bottom, 25.0)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 300)
                 
+                Text("Please choose the natural disaster that you have been affected by")
+                    .multilineTextAlignment(.center)
                 Picker("Select an option", selection: $selectedOption) {
                                ForEach(options, id: \.self) { option in
                                    Text(option)
@@ -53,9 +59,32 @@ struct SupportForm: View {
                            
                 Text("Selected: \(selectedOption)")
                     .font(.title3)
+                    .padding(.bottom, 25.0)
+                
+                
+                Text("Please write what you need below")
+                TextField("Enter what you need here", text: $text)
+                    .padding(.bottom, 40.0)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(width: 300)
+
+                NavigationLink(destination: Text("We will make sure to give you all the suport you require")) {
+                    Text("Submit")
+                        .font(.title2)
+                        .foregroundColor(Color.black)
+                        .padding(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.teal)
+                                   .foregroundColor(.orange)
+                                   .font(.title)
+                                   .clipShape(Capsule())
+                        
+                        
+                        
+                }
                 
             }
-            
+            .padding()
         }
 
     }

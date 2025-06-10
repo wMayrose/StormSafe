@@ -9,6 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        VStack {
+            Image(systemName: "house")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Home")
+       
         NavigationStack {
             
             
@@ -48,6 +54,9 @@ struct ContentView: View {
                     }
                 }
         } // end NavStack
+    } // end VStack
+        Group {
+            
         } // end Group
     } // end var body
 

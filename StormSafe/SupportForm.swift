@@ -16,9 +16,15 @@ struct SupportForm: View {
                 Text("Support Form")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
-                    .padding(.bottom, 700.0)
+                    
+                Text("If you have been negativly affected by a natural disaster, please fill out this form and we will help you get the support you need.")
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(nil)
+                    .padding(.bottom, 620.0)
+                    
             }
-   
+            
         }
 
     }

@@ -20,15 +20,25 @@ struct DonationPage: View {
                     ScrollView{
                         Text("You have arrived to the donation page!")
                             .font(.largeTitle)
+                            .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .padding()
                         Text("We are StormSafe: An organization that is trying to aid people impacted by natural disasters. \n\nAny donation is welcome and appreciated.")
                             .multilineTextAlignment(.center)
-                        TextField("Full Name", text: $name)
-                            .multilineTextAlignment(.center)
-                            .font(.title)
-                            .border(Color.payneSGray, width: 1)
-                            .padding()
+                            .padding(.horizontal)
+                            
+                        HStack {
+                            TextField("First Name", text: $name)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                            TextField("Last Name", text: $name)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                        } // end HStack1
                         TextField("Email", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
                             .font(.title)
@@ -44,11 +54,42 @@ struct DonationPage: View {
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
                             .padding()
-                        TextField("Why are you donating?", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Why are you donating? (optional)", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
                             .padding()
+                        TextField("Credit Card #", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            .multilineTextAlignment(.center)
+                            .font(.title)
+                            .border(Color.payneSGray, width: 1)
+                            .padding()
+                        HStack {
+                            TextField("Expiration Date", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                            TextField("PIN", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                        } // end HStack2
+                            TextField("Billing Address 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                            TextField("Billing Address 2 (Optional)", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                        
+                        
+            // add more address slots and HStacks
+                        
                         NavigationLink(destination: DonationThankYou()) {
                             Text("Submit")
                         }   // end NavLink
@@ -60,13 +101,12 @@ struct DonationPage: View {
                         Text("For more information on how your contributions are used, click HERE")
                             .padding()
                     } // end NavLink
-                 
                 } // end VStack
             } // end ZStack
         } // end NavStack
     } // end var body
 } // end struct
-// add text fields and text boxes and other nav links on home page for group members
+
 
 #Preview {
     DonationPage()

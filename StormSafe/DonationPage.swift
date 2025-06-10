@@ -41,7 +41,8 @@ struct DonationPage: View {
                         .buttonStyle(.borderedProminent)
                         .tint(.purple)
                         NavigationLink(destination: DonationInfo()) {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                            Text("For more information on how your contributions are used, click HERE")
+                                .padding()
                         } // end NavLink
                     } //end ScrollView
                 } // end NavStack

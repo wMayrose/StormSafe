@@ -16,7 +16,7 @@ struct SupportForm: View {
     
     var body: some View {
         ZStack {
-           Color("Light Cambridge Blue")
+           Color("LightCambridgeBlue")
                 .ignoresSafeArea(edges: .all)
             VStack {
                 Text("Support Form")
@@ -44,7 +44,7 @@ struct SupportForm: View {
                 
                 Text("Please write your address below")
                 TextField("Enter address here", text: $text)
-                    .padding(.bottom, 25.0)
+                    .padding(.bottom, 12.0)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 300)
                 

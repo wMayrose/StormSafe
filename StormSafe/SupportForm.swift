@@ -12,7 +12,7 @@ struct SupportForm: View {
     
     @State private var selectedOption = ""
     
-    let options = ["Tornado", "Earthquake", "Tsunami"]
+    let options = ["Tornado", "Earthquake", "Tsunami", ]
     
     var body: some View {
         ZStack {
@@ -68,7 +68,8 @@ struct SupportForm: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 300)
 
-                NavigationLink(destination: Text("We will make sure to give you all the suport you require")) {
+                NavigationLink(destination: Text("We will make sure to give you all the suport you require.")
+                    .multilineTextAlignment(.center)) {
                     Text("Submit")
                         .font(.title2)
                         .foregroundColor(Color.black)

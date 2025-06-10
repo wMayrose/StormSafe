@@ -14,29 +14,20 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Home")
-       
-        NavigationStack {
             
-            
-            
-            
-            
-            
-            
-            
-            
-            ZStack {
-                Image("storm")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.bottom)
-                    .frame(width: 300.0)
-                Text("StormSafe")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .padding([.top, .trailing], 120.0)
-            }
+            NavigationStack {
+                ZStack {
+                    Image("storm")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fill)
+                        .padding(.bottom)
+                        .frame(width: 300.0)
+                    Text("StormSafe")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.black)
+                        .padding([.top, .trailing], 120.0)
+                }
                 VStack {
                     Text("Welcome")
                     NavigationLink(destination: DonationPage()) {
@@ -53,13 +44,14 @@ struct ContentView: View {
                         Text("Click Me for Information on Torandos")
                     }
                 }
-        } // end NavStack
-    } // end VStack
+            } // end NavStack
+        } // end VStack
         Group {
             
         } // end Group
     } // end var body
-
-#Preview {
-    ContentView()
+    
+    #Preview {
+        ContentView()
+    }
 }

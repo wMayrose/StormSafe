@@ -17,7 +17,7 @@ struct DonationPage: View {
                             .font(.largeTitle)
                             .multilineTextAlignment(.center)
                             .padding()
-                        Text("We are StormSafe. An organization that is trying to aid people impacted by natural disasters. \n\nAny donation is welcome and appreciated.")
+                        Text("We are StormSafe: An organization that is trying to aid people impacted by natural disasters. \n\nAny donation is welcome and appreciated.")
                             .multilineTextAlignment(.center)
                         TextField("Type your name here...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
@@ -35,8 +35,9 @@ struct DonationPage: View {
                             .border(Color.black, width: 1)
                             .padding()
                         Button("Submit") {
-                            
+                           
                         } // end button
+                        @State
                         .font(.title2)
                         .buttonStyle(.borderedProminent)
                         .tint(.purple)
@@ -46,7 +47,6 @@ struct DonationPage: View {
                         } // end NavLink
                     } //end ScrollView
                 } // end NavStack
-            
         } // end VStack
     } // end var body
 } // end struct

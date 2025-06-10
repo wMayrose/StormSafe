@@ -10,6 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
+            
+            
+            
+            
+            
+            
+            
+            
+            
             ZStack {
                 Image("storm")
                     .resizable(resizingMode: .stretch)

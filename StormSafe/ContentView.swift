@@ -19,7 +19,7 @@ struct ContentView: View {
             Text("Content")
             NavigationLink(destination: DonationPage()) {
                 Text("For Donating")
-            } // end NavLinkm,
+            } // end NavLink
             NavigationLink(destination: SupportForm()) {
                 Text("Support Form")
             }

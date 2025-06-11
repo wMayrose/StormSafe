@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD7BD4E32DF8CCC700E62B2C /* frenchTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7BD4E22DF8CCC700E62B2C /* frenchTranslation.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD02BCB42DF745C400115A55 /* StormSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StormSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7BD4E22DF8CCC700E62B2C /* frenchTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frenchTranslation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		BD02BCAB2DF745C400115A55 = {
 			isa = PBXGroup;
 			children = (
+				BD7BD4E22DF8CCC700E62B2C /* frenchTranslation.swift */,
 				BD02BCB62DF745C400115A55 /* StormSafe */,
 				BD02BCB52DF745C400115A55 /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7BD4E32DF8CCC700E62B2C /* frenchTranslation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -86,7 +86,30 @@ struct DonationPage: View {
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
-                        
+                        HStack {
+                            TextField("City", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                            TextField("Country", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                        }
+                        HStack {
+                            TextField("Zipcode", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                            TextField("Region", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.center)
+                                .font(.title)
+                                .border(Color.payneSGray, width: 1)
+                                .padding()
+                        }
                         
             // add more address slots and HStacks
                         

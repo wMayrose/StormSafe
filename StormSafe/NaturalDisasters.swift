@@ -6,41 +6,38 @@
 //
 
 import SwiftUI
-struct Earthquake: Identifiable {
+struct Disaster: Identifiable {
     let id = UUID()
     let name : String
     let iconName : String
     let detail : String
 }
-let topics = ["Earthquakes", "Torandos", "Floods"]
 
 struct NaturalDisasters: View {
     var body: some View {
-            NavigationStack {
-                HStack {
-                    ScrollView {
-                        HStack (spacing: 20){
-                         
-                            
-                            NavigationLink(destination:
-                                            Text( " Click Me for Information on Earthquakes🌎")) {
-                                Text ("Earthquakes")
-                                    .multilineTextAlignment(.center)
-                            }
-                            NavigationLink(destination: Text("Click Me for Information on Torandos")) {
-                                Text("Torandos")
-                                    .font(.title2)
-                                    .foregroundColor(Color("Eerie Black"))
-                            }//end NavLink for Tornadoes
-                            NavigationLink(destination: Text("Floods")) {
-                                Text("Floods")
-                                    .font(.title2)
-                                    .foregroundColor(Color("Eerie Black"))
-                                    
-                            }//end Navlink for Floods
-                        }//end VStack for Scrollview
-                        .padding()
-                    }//endScrollView
+        NavigationStack {
+           
+                VStack (spacing: 20){
+                    
+                    
+                    NavigationLink(destination:
+                                    Text( " Earthquakes")) {
+                        
+                        Image("EarthquakeIcon")
+                        
+                        
+                    }
+                    NavigationLink(destination: Text("Tornados")) {
+                        Image("TornadoIcon")
+                    }//end NavLink for Tornadoes
+                    
+                    NavigationLink(destination: Text("Floods")) {
+                     Image("FloodIcon")
+                        
+                    }//end Navlink for Floods
+                    
+                    .padding()
+                    
                 }
                 //end VStack
                 .navigationTitle("Home")
@@ -50,10 +47,11 @@ struct NaturalDisasters: View {
             //end NavStack
         }
         //end body
+        
+    }//end struct
     
-}//end struct
-
     #Preview {
         NaturalDisasters()
     }
+    
 

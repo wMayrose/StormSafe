@@ -16,7 +16,7 @@ struct Disaster: Identifiable {
 struct NaturalDisasters: View {
     var body: some View {
         NavigationStack {
-           
+            ZStack {
                 VStack (spacing: 20){
                     
                     
@@ -32,17 +32,38 @@ struct NaturalDisasters: View {
                     }//end NavLink for Tornadoes
                     
                     NavigationLink(destination: Text("Floods")) {
-                     Image("FloodIcon")
+                        Image("FloodIcon")
                         
                     }//end Navlink for Floods
+                    
+                    
+                    
+                    
+                    
                     
                     .padding()
                     
                 }
                 //end VStack
-                .navigationTitle("Home")
+                .navigationTitle("Back")
                 .navigationBarTitleDisplayMode( .inline)
                 .navigationBarHidden(true)
+                
+                NavigationLink(destination: ContentView()) {
+                    Image(systemName: "house")
+                        .padding(.top, 725.0)
+                   
+                    
+                }
+
+                NavigationLink(destination: ContentView()) {
+                    
+                    Text("Home")
+                        .padding(.top, 765.0)
+                }
+            }
+            
+            
             }
             //end NavStack
         }

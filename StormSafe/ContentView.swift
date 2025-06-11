@@ -53,19 +53,13 @@ struct ContentView: View {
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 30.0)
                             }
-                            NavigationLink(destination:
-                                            Text( " Earthquakes")) {
-                                Text ("Earthquakes Info")
+                            NavigationLink(destination: NaturalDisasters()) {
+                                Text ("Natural Disasters information")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 10.0)
                             }
-                            NavigationLink(destination: Text("Torandoes")) {
-                                Text("Tornado Info")
-                                    .font(.title)
-                                    .foregroundColor(Color.white)
-                                    .padding(.bottom, 5.0)
-                            }
+                         
                         }
                     }
                 }

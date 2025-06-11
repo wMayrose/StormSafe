@@ -11,6 +11,19 @@ struct DonationPage: View {
     @State private var textTitle: String = ""
     @State private var name: String = ""
     @State private var donations: String = ""
+    @State private var lastName: String = ""
+    @State private var email: String = ""
+    @State private var phoneNumber: String = ""
+    @State private var whyDonating: String = ""
+    @State private var creditCard: String = ""
+    @State private var expirDate: String = ""
+    @State private var PIN: String = ""
+    @State private var BillAdd1: String = ""
+    @State private var BillAdd2: String = ""
+    @State private var city: String = ""
+    @State private var region: String = ""
+    @State private var zipcode: String = ""
+    @State private var country: String = ""
     var body: some View {
         NavigationStack {
         ZStack {
@@ -33,18 +46,18 @@ struct DonationPage: View {
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
-                            TextField("Last Name", text: $name)
+                            TextField("Last Name", text: $lastName)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
                         } // end HStack1
-                        TextField("Email", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Email", text: $email)
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
                             .padding()
-                        TextField("Phone Number", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Phone Number", text: $phoneNumber)
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
@@ -54,57 +67,57 @@ struct DonationPage: View {
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
                             .padding()
-                        TextField("Why are you donating? (optional)", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Why are you donating? (optional)", text: $whyDonating)
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
                             .padding()
-                        TextField("Credit Card #", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Credit Card #", text: $creditCard)
                             .multilineTextAlignment(.center)
                             .font(.title)
                             .border(Color.payneSGray, width: 1)
                             .padding()
                         HStack {
-                            TextField("Expiration Date", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("Expiration Date", text: $expirDate)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
-                            TextField("PIN", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("PIN", text: $PIN)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
                         } // end HStack2
-                            TextField("Billing Address 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("Billing Address 1", text: $BillAdd1)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
-                            TextField("Billing Address 2 (Optional)", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("Billing Address 2 (Optional)", text: $BillAdd2)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
                         HStack {
-                            TextField("City", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("City", text: $city)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
-                            TextField("Country", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("Region/State", text: $region)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
                         }
                         HStack {
-                            TextField("Zipcode", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("Country", text: $country)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)
                                 .padding()
-                            TextField("Region", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                            TextField("Zipcode", text: $zipcode)
                                 .multilineTextAlignment(.center)
                                 .font(.title)
                                 .border(Color.payneSGray, width: 1)

@@ -35,14 +35,14 @@ struct ContentView: View {
                         Color("Payne's Gray")
                             .ignoresSafeArea(.all)
                         VStack {
-                            Text("Hello World")
+                            Text("Welcome")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                                 .padding(.trailing, 220.0)
                                 .padding(.bottom,)
                             NavigationLink(destination: DonationPage()) {
-                                Text("For Donating")
+                                Text("Donation Form")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 30.0)

@@ -92,14 +92,12 @@ struct SupportForm: View {
                 {
                     Text("Submit")
                         .font(.title2)
-                        .foregroundColor(Color.black)
-                        .padding(EdgeInsets(top: 5, leading: 16, bottom: 5, trailing: 16)
-                            )
-                        .frame(maxWidth: .infinity)
-                        .background(Color.teal)
-                        .foregroundColor(.orange)
-                        .font(.title)
-                        .clipShape(Capsule())
+                                        .foregroundColor(.black)
+                                        .padding(.vertical, 10)
+                                        .padding(.horizontal, 25)
+                                        .background(Color.teal)
+                                        .clipShape(Capsule())
+                                        .padding(.horizontal, 20)
                     
                 }
                     

@@ -10,6 +10,7 @@ import SwiftUI
 struct NaturalDisasters: View {
     var body: some View {
         NavigationStack {
+            ZStack {
                 VStack (spacing: 20){
                     NavigationLink {
                         // Destination
@@ -34,12 +35,37 @@ struct NaturalDisasters: View {
                         .multilineTextAlignment(.leading)) {
                      Image("FloodIcon")
                     }//end Navlink for Floods
+                    
+                    
+                    
+                    
+                    
+                    
+                    .padding()
+                    
                 }
                 //end VStack
                 .padding()
                 .navigationTitle("Home")
+                .navigationTitle("Back")
                 .navigationBarTitleDisplayMode( .inline)
                 .navigationBarHidden(true)
+                
+                NavigationLink(destination: ContentView()) {
+                    Image(systemName: "house")
+                        .padding(.top, 725.0)
+                   
+                    
+                }
+
+                NavigationLink(destination: ContentView()) {
+                    
+                    Text("Home")
+                        .padding(.top, 765.0)
+                }
+            }
+            
+            
             }
             //end NavStack
         }

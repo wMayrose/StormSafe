@@ -18,7 +18,7 @@ struct DonationThankYou: View {
                 Image(systemName: "house")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
-                    .tint(.black)
+                    .tint(.blue)
                     .padding(.bottom, 750.0)
                     .padding(.leading, 300.0)
                 NavigationLink(destination: ContentView()) {

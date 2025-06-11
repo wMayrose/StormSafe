@@ -11,7 +11,7 @@ struct DonationInfo: View {
     var body: some View {
         NavigationStack{
             ZStack {
-                Color.payneSGray
+                Color.davySGray
                     .ignoresSafeArea(edges: .all)
                 ScrollView {
                 VStack {
@@ -40,7 +40,7 @@ struct DonationInfo: View {
                             .font(.headline)
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(.white)
+                            .foregroundColor(.honeydew)
                             .padding(10)
                         Text("Your donations are used to:")
                             .multilineTextAlignment(.center)
@@ -49,29 +49,182 @@ struct DonationInfo: View {
                         Text("\nRestore buildings & communities \n\nInstall fire extinguishers \n\nInstall security cameras \n\nProvide emergency supplies \n\nProvide temporary housing")
                             .multilineTextAlignment(.center)
                             .font(.headline)
-                            .foregroundColor(.white)
+                            .foregroundColor(.honeydew)
                         Text("Recent Disasters")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .padding([.top, .leading, .trailing])
                         
-                        Text("St Louis, Missouri, US (May 16, 2025)")
+                    Text("St Louis, Missouri, US (May 16, 2025)")
                         .font(.headline)
                         .foregroundColor(.lightCambridgeBlue)
+                        .padding(.top)
                     
-                        ScrollView(.horizontal) {
-                            HStack {
-                                Image("stl-tornado_ph1.jpg")
-                                Image("stl-tornado_ph2.jpg")
-                                Image("stl-tornado_ph3.jpg")
-                                Image("stl-tornado_ph4.jpg")
-                                Image("stl-tornado_ph5.jpg")
-                                Image("stl-tornado_ph6.jpg")
-                            } // end HStack1
-                        } // end ScrollView1
-                        
-                        
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack(spacing: 16) {
+                            Image("stl-tornado_ph1.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("stl-tornado_ph2.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("stl-tornado_ph3.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("stl-tornado_ph4.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("stl-tornado_ph5.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("stl-tornado_ph6.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+                        } // end HStack
+                        .padding()
+                    } // end ScrollView
+                    Text("Disaster: Tornado")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .padding(.bottom)
+                    
+                    Text("Hong Kong, China & Haiphong, Vietnam (September 17, 2025)")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .multilineTextAlignment(.center)
+                        .padding([.top, .leading, .trailing])
+                    
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack(spacing: 16) {
+                            Image("yagi_ph1.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("yagi_ph2.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("yagi_ph3.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("yagi_ph4.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("yagi_ph5.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("yagi_ph6.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+                        } // end HStack
+                        .padding()
+                    } // end ScrollView
+                    Text("Disaster: Super Typhoon Yagi")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .padding(.bottom)
+                    
+                    
+                    Text("Myanmar (May 28, 2025)")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .padding(.top)
+                    
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack(spacing: 16) {
+                            Image("myanmar_ph1.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph2.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph3.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph4.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph5.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph6.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 400, height: 300)
+                                .clipped()
+                                .cornerRadius(10)
+                        } // end HStack
+                        .padding()
+                    } // end ScrollView
+                    Text("Disaster: Earthquake (Mag: 7.7)")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .padding(.bottom)
 //                        ScrollView(.horizontal){
 //                            HStack (spacing: 20){
 //                                Image(sourceName: "globe")

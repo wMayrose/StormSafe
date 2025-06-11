@@ -35,7 +35,7 @@ struct ContentView: View {
                         Color("Payne's Gray")
                             .ignoresSafeArea(.all)
                         VStack {
-                            Text("Hello World")
+                            Text("Welcome")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)

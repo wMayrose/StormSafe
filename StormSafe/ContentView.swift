@@ -45,21 +45,29 @@ struct ContentView: View {
                                 Text("Donation Form")
                                     .font(.title)
                                     .foregroundColor(Color.white)
-                                    .padding(.bottom, 30.0)
+                                    .padding(.bottom, 10.0)
                             } // end NavLink,
+                            .font(.title2)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.darkCambridgeBlue)
                             NavigationLink(destination: SupportForm()) {
                                 Text("Support Form")
                                     .font(.title)
                                     .foregroundColor(Color.white)
-                                    .padding(.bottom, 30.0)
+                                    .padding(.bottom, 10.0)
                             }
+                            .font(.title2)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.darkCambridgeBlue)
                             NavigationLink(destination: NaturalDisasters()) {
                                 Text ("Natural Disasters information")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 10.0)
                             }
-                         
+                            .font(.title2)
+                            .buttonStyle(.borderedProminent)
+                            .tint(.darkCambridgeBlue)
                         }
                     
                     }

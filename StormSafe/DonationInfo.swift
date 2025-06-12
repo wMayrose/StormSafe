@@ -56,18 +56,10 @@ struct DonationInfo: View {
                             .foregroundColor(.white)
                             .padding([.top, .leading, .trailing])
                         
-                    Image(systemName: "line")
-    
-                    
-     // thin the lines tomorrow
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    Color.darkCambridgeBlue
+                    Rectangle()
+                        .fill(Color.eerieBlack)
+                        .frame(height: 4) // set thickness
+                        .padding(.horizontal)
                     
                     Text("Myanmar (May 28, 2025)")
                         .font(.headline)
@@ -76,7 +68,7 @@ struct DonationInfo: View {
                     
                     ScrollView(.horizontal, showsIndicators: true) {
                         HStack(spacing: 16) {
-                            Image("myanmar_ph1.jpg")
+                            Image("myanmar_ph4.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 333, height: 250)
@@ -97,7 +89,7 @@ struct DonationInfo: View {
                                 .clipped()
                                 .cornerRadius(10)
 
-                            Image("myanmar_ph4.jpg")
+                            Image("myanmar_ph6.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 333, height: 250)
@@ -111,7 +103,7 @@ struct DonationInfo: View {
                                 .clipped()
                                 .cornerRadius(10)
 
-                            Image("myanmar_ph6.jpg")
+                            Image("myanmar_ph1.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 333, height: 250)
@@ -125,8 +117,10 @@ struct DonationInfo: View {
                         .foregroundColor(.lightCambridgeBlue)
                         .padding(.bottom)
                     
-                    Image(systemName: "line")
-                    Color.darkCambridgeBlue
+                    Rectangle()
+                        .fill(Color.eerieBlack)
+                        .frame(height: 4) // set thickness
+                        .padding(.horizontal)
                     
                     Text("St Louis, Missouri, US (May 16, 2025)")
                         .font(.headline)
@@ -185,8 +179,10 @@ struct DonationInfo: View {
                         .foregroundColor(.lightCambridgeBlue)
                         .padding(.bottom)
                     
-                    Image(systemName: "line")
-                    Color.darkCambridgeBlue
+                    Rectangle()
+                        .fill(Color.eerieBlack)
+                        .frame(height: 4) // set thickness
+                        .padding(.horizontal)
                     
                     Text("Hong Kong, China & Haiphong, Vietnam (September 17, 2025)")
                         .font(.headline)

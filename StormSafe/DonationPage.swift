@@ -137,6 +137,7 @@ struct DonationPage: View {
                     NavigationLink(destination: DonationInfo()) {
                         Text("For more information on how your contributions are used, click HERE")
                             .padding()
+                  
                     } // end NavLink
                 } // end VStack
             } // end ZStack

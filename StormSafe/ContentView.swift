@@ -61,7 +61,7 @@ struct ContentView: View {
                             .buttonStyle(.borderedProminent)
                             .tint(.darkCambridgeBlue)
                             NavigationLink(destination: NaturalDisasters()) {
-                                Text ("Natural Disasters information")
+                                Text ("Natural Disasters \nInformation")
                                     .font(.title)
                                     .foregroundColor(Color.white)
                                     .padding(.bottom, 10.0)

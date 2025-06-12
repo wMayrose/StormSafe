@@ -36,12 +36,12 @@ struct ContentView: View {
                             .ignoresSafeArea(.all)
                         VStack {
                             Text("Welcome")
-                                .font(.title)
+                                .font(.largeTitle)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                                 .padding(.trailing, 220.0)
                                 .padding(.bottom,)
-                            
+
                             NavigationLink(destination: DonationPage()) {
                                 Text("Donation Form")
                                     .font(.title)
@@ -69,6 +69,7 @@ struct ContentView: View {
                             .font(.title2)
                             .buttonStyle(.borderedProminent)
                             .tint(.darkCambridgeBlue)
+                            .padding(.bottom, 70.0)
                         }
                     
                     }

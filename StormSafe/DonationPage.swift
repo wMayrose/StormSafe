@@ -128,7 +128,7 @@ struct DonationPage: View {
                         
                         NavigationLink(destination: DonationThankYou()) {
                             Text("Submit")
-                                .navigationBarBackButtonHidden(true)
+                                
                         }   // end NavLink
                     } //end ScrollView
                     .font(.title2)

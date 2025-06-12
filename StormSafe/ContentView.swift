@@ -41,6 +41,7 @@ struct ContentView: View {
                                 .foregroundColor(Color.white)
                                 .padding(.trailing, 220.0)
                                 .padding(.bottom,)
+                            
                             NavigationLink(destination: DonationPage()) {
                                 Text("Donation Form")
                                     .font(.title)

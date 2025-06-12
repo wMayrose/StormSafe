@@ -18,6 +18,7 @@ struct NaturalDisasters: View {
                             .scaledToFit()
                     }
 
+
                     NavigationLink(destination: tornadoDescription) {
                         Image("TornadoIcon")
                             .resizable()
@@ -29,6 +30,31 @@ struct NaturalDisasters: View {
                             .resizable()
                             .scaledToFit()
                     }
+
+                    
+                    NavigationLink(destination:
+                                    Text("Tornados are violently rotating columns of air extending from thunderstorm to the grounds with winds that can exceed 300 mph and can form rapidly with little warning. The key to survival is having a predetermined shelter plan and acting immediately when warnings are issued seek shelter in a basement or interior room on the lowest floor of a sturdy building, away from windows. If caught outdoors, lie flat in a low area like a ditch and cover your head with your hands, but never shelter under highway overpassess as they create dangerous wind tunnels. Mobile homes offer no protection and should be abandoned immediately for sturdier shelter. A tornado watch means conditions are favorable for tornado development, while a tornado warning meands one has been spotted and you should take shelter immediately. The distinctive roaring sound, often described as a freight train, may be your only warning in some cases.")
+                        .font(.body)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)) {
+                        Image("TornadoIcon")
+                    }//end NavLink for Tornadoes
+                    
+                    NavigationLink(destination: Text("Floods are among the most common and deadly natural disasters, occuring when water overflows onto normally dry land due to heavy rainfall, dam failures, or storm surges. TO survive a flood, move to higher ground immediately and avoid walking or driving through moving water just six inches can knock you down, and twelve inches can carry away because of the Momentim and Unexpected Currents. Never attempt to cross flooded roads, as water depth and current strength are difficult to judge. Keep emergency supplies including water, non perishable food, flashlights, and a battery powered radio in waterproof containers. If trapped in a building, move to the highest floor but avoid attics where you could become trapped by rising water. Flash floods can develop within minutes, making early evacuation very important for survival." )
+                        .font(.body)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.leading)) {
+                     Image("FloodIcon")
+                    }//end Navlink for Floods
+                    
+                    
+                    
+                    
+                    
+                    
+                    .padding()
+                    
+
                 }
                 .padding()
                 .navigationTitle("Home")

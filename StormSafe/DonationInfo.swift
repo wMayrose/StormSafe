@@ -56,6 +56,72 @@ struct DonationInfo: View {
                             .foregroundColor(.white)
                             .padding([.top, .leading, .trailing])
                         
+                    Rectangle()
+                        .fill(Color.eerieBlack)
+                        .frame(height: 4) // set thickness
+                        .padding(.horizontal)
+                    
+                    Text("Myanmar (May 28, 2025)")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .padding(.top)
+                    
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack(spacing: 16) {
+                            Image("myanmar_ph4.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 333, height: 250)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph2.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 333, height: 250)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph3.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 333, height: 250)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph6.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 333, height: 250)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph5.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 333, height: 250)
+                                .clipped()
+                                .cornerRadius(10)
+
+                            Image("myanmar_ph1.jpg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 333, height: 250)
+                                .clipped()
+                                .cornerRadius(10)
+                        } // end HStack
+                        .padding()
+                    } // end ScrollView
+                    Text("Disaster: Earthquake (Mag: 7.7)")
+                        .font(.headline)
+                        .foregroundColor(.lightCambridgeBlue)
+                        .padding(.bottom)
+                    
+                    Rectangle()
+                        .fill(Color.eerieBlack)
+                        .frame(height: 4) // set thickness
+                        .padding(.horizontal)
+                    
                     Text("St Louis, Missouri, US (May 16, 2025)")
                         .font(.headline)
                         .foregroundColor(.lightCambridgeBlue)
@@ -66,51 +132,57 @@ struct DonationInfo: View {
                             Image("stl-tornado_ph1.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("stl-tornado_ph2.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("stl-tornado_ph3.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("stl-tornado_ph4.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("stl-tornado_ph5.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("stl-tornado_ph6.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
                         } // end HStack
                         .padding()
                     } // end ScrollView
+                    
                     Text("Disaster: Tornado")
                         .font(.headline)
                         .foregroundColor(.lightCambridgeBlue)
                         .padding(.bottom)
+                    
+                    Rectangle()
+                        .fill(Color.eerieBlack)
+                        .frame(height: 4) // set thickness
+                        .padding(.horizontal)
                     
                     Text("Hong Kong, China & Haiphong, Vietnam (September 17, 2025)")
                         .font(.headline)
@@ -123,42 +195,42 @@ struct DonationInfo: View {
                             Image("yagi_ph1.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("yagi_ph2.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("yagi_ph3.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("yagi_ph4.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("yagi_ph5.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
 
                             Image("yagi_ph6.jpg")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
+                                .frame(width: 333, height: 250)
                                 .clipped()
                                 .cornerRadius(10)
                         } // end HStack
@@ -170,61 +242,6 @@ struct DonationInfo: View {
                         .padding(.bottom)
                     
                     
-                    Text("Myanmar (May 28, 2025)")
-                        .font(.headline)
-                        .foregroundColor(.lightCambridgeBlue)
-                        .padding(.top)
-                    
-                    ScrollView(.horizontal, showsIndicators: true) {
-                        HStack(spacing: 16) {
-                            Image("myanmar_ph1.jpg")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
-                                .clipped()
-                                .cornerRadius(10)
-
-                            Image("myanmar_ph2.jpg")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
-                                .clipped()
-                                .cornerRadius(10)
-
-                            Image("myanmar_ph3.jpg")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
-                                .clipped()
-                                .cornerRadius(10)
-
-                            Image("myanmar_ph4.jpg")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
-                                .clipped()
-                                .cornerRadius(10)
-
-                            Image("myanmar_ph5.jpg")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
-                                .clipped()
-                                .cornerRadius(10)
-
-                            Image("myanmar_ph6.jpg")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 400, height: 300)
-                                .clipped()
-                                .cornerRadius(10)
-                        } // end HStack
-                        .padding()
-                    } // end ScrollView
-                    Text("Disaster: Earthquake (Mag: 7.7)")
-                        .font(.headline)
-                        .foregroundColor(.lightCambridgeBlue)
-                        .padding(.bottom)
 //                        ScrollView(.horizontal){
 //                            HStack (spacing: 20){
 //                                Image(sourceName: "globe")
